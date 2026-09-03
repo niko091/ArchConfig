@@ -1,0 +1,137 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "file",
+        "source": "~/.config/fastfetch/nike.txt",
+        "padding": {
+            "top": 0,
+            "left": 1,
+            "right": 2
+        },
+        "color": {
+            "1": "#adc6ff",
+            "2": "#e2e2e9",
+            "3": "#debcdf"
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys": "#adc6ff",
+            "output": "#e2e2e9",
+            "separator": "#8e9099"
+        },
+        "percent": {
+            "type": 9
+        }
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        "break",
+        {
+            "type": "custom",
+            "key": "{##adc6ff}╭──────────────────╮"
+        },
+        {
+            "type": "title",
+            "key": "{##adc6ff}│ {##debcdf}󰀄  ΝΙΚΗ           {##adc6ff}│"
+        },
+        {
+            "type": "custom",
+            "key": "{##adc6ff}├──────────────────┤"
+        },
+        {
+            "type": "os",
+            "key": "{##adc6ff}│ {##e2e2e9}󰣇  system         {##adc6ff}│",
+            "format": "{pretty-name}"
+        },
+        {
+            "type": "host",
+            "key": "{##adc6ff}│ {##e2e2e9}󰌢  machine        {##adc6ff}│",
+            "format": "{family} {name}"
+        },
+        {
+            "type": "kernel",
+            "key": "{##adc6ff}│ {##e2e2e9}󰒋  kernel         {##adc6ff}│",
+            "format": "{release}"
+        },
+        {
+            "type": "packages",
+            "key": "{##adc6ff}│ {##e2e2e9}󰏖  packages       {##adc6ff}│"
+        },
+        {
+            "type": "custom",
+            "key": "{##adc6ff}├──────────────────┤"
+        },
+        {
+            "type": "cpu",
+            "key": "{##adc6ff}│ {##e2e2e9}󰻠  cpu            {##adc6ff}│",
+            "format": "{name}"
+        },
+        {
+            "type": "gpu",
+            "key": "{##adc6ff}│ {##e2e2e9}󰢮  gpu            {##adc6ff}│",
+            "format": "{name}"
+        },
+        {
+            "type": "memory",
+            "key": "{##adc6ff}│ {##e2e2e9}󰍛  memory         {##adc6ff}│",
+            "format": "{used} / {total} ({percentage})"
+        },
+        {
+            "type": "disk",
+            "key": "{##adc6ff}│ {##e2e2e9}󰋊  disk           {##adc6ff}│",
+            "folders": "/",
+            "format": "{size-used} / {size-total} ({size-percentage})"
+        },
+        {
+            "type": "battery",
+            "key": "{##adc6ff}│ {##e2e2e9}󰁹  battery        {##adc6ff}│",
+            "format": "{capacity} • {status}"
+        },
+        {
+            "type": "custom",
+            "key": "{##adc6ff}├──────────────────┤"
+        },
+        {
+            "type": "wm",
+            "key": "{##adc6ff}│ {##e2e2e9}  compositor     {##adc6ff}│",
+            "format": "{pretty-name}"
+        },
+        {
+            "type": "shell",
+            "key": "{##adc6ff}│ {##e2e2e9}  shell          {##adc6ff}│",
+            "format": "{pretty-name} {version}"
+        },
+        {
+            "type": "terminal",
+            "key": "{##adc6ff}│ {##e2e2e9}  terminal       {##adc6ff}│",
+            "format": "{pretty-name}"
+        },
+        {
+            "type": "terminalfont",
+            "key": "{##adc6ff}│ {##e2e2e9}  font           {##adc6ff}│",
+            "format": "{name} {size}"
+        },
+        {
+            "type": "display",
+            "key": "{##adc6ff}│ {##e2e2e9}󰍹  display        {##adc6ff}│",
+            "format": "{width}x{height}"
+        },
+        {
+            "type": "uptime",
+            "key": "{##adc6ff}│ {##e2e2e9}󰅐  uptime         {##adc6ff}│"
+        },
+        {
+            "type": "custom",
+            "key": "{##adc6ff}╰──────────────────╯"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 3,
+            "symbol": "circle"
+        }
+    ]
+}

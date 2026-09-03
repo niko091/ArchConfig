@@ -1,0 +1,18 @@
+# Secrets and application state
+.config/obsidian/
+.config/dankcal/
+.config/Bitwarden/
+.config/gh/hosts.yml
+.ssh/
+*credentials*
+*secret*
+*token*
+
+# Generated/runtime data
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+dotfiles/.config/systemd/user/*.target.wants/
+dotfiles/.config/nvim/.lazy/

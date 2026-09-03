@@ -1,0 +1,13 @@
+#!/bin/sh
+# The ASUS firmware performs the privacy toggle; report its resulting state.
+sleep 0.25
+
+if [ -e /dev/video0 ]; then
+    state="Camera available"
+    icon="camera-web"
+else
+    state="Camera privacy enabled"
+    icon="camera-disabled"
+fi
+
+/usr/bin/dms notify "$state" --icon "$icon" --timeout 1800 >/dev/null 2>&1 || true

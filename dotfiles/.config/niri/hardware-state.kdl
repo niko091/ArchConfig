@@ -1,0 +1,5 @@
+// Runtime hardware state. This file is managed by niri-touchpad-toggle.
+input {
+    touchpad {
+    }
+}

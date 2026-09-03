@@ -1,0 +1,17 @@
+[Unit]
+Description=Automatically mirror the built-in display to external Niri outputs
+Documentation=https://github.com/Ferdi265/wl-mirror
+PartOf=graphical-session.target
+After=niri.service graphical-session.target
+
+[Service]
+Type=simple
+Environment=NIRI_MIRROR_SOURCE=eDP-1
+Environment=NIRI_MIRROR_SCALING=fit
+ExecStart=%h/.local/bin/niri-auto-mirror --watch
+Restart=on-failure
+RestartSec=2
+KillMode=control-group
+
+[Install]
+WantedBy=graphical-session.target

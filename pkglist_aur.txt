@@ -1,0 +1,8 @@
+clion
+clion-cmake
+clion-gdb
+clion-jre
+clion-lldb
+dankcalendar-bin
+yay
+zen-browser-bin

@@ -1,0 +1,3 @@
+#!/bin/sh
+# Keep DankMaterialShell ahead of the unrelated Rust binary named "dms".
+exec /usr/bin/dms "$@"

@@ -1,0 +1,11 @@
+#!/bin/sh
+set -eu
+
+device="asus::kbd_backlight"
+current=$(/usr/bin/brightnessctl -d "$device" get)
+maximum=$(/usr/bin/brightnessctl -d "$device" max)
+next=$(( (current + 1) % (maximum + 1) ))
+
+/usr/bin/brightnessctl -q -d "$device" set "$next"
+percent=$(( next * 100 / maximum ))
+/usr/bin/dms notify "Keyboard backlight: ${next}/${maximum}" --icon keyboard-brightness --timeout 1500 >/dev/null 2>&1 || true
