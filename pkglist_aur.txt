@@ -1,8 +1,12 @@
-clion
 clion-cmake
 clion-gdb
 clion-jre
 clion-lldb
+cmake-format
 dankcalendar-bin
+google-cloud-cli
+google-cloud-cli-gsutil
+opencode-bin
+spotify
 yay
 zen-browser-bin

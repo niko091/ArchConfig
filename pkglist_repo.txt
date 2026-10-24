@@ -6,6 +6,7 @@ base-devel
 bat
 bind
 bitwarden
+blender
 bluez
 bluez-utils
 brightnessctl
@@ -16,16 +17,15 @@ cmatrix
 code
 cups
 cups-pk-helper
-dgop
 direnv
 discord
 dms-shell
-dms-shell-niri
+docker
 dos2unix
+dux-gop
 efibootmgr
 eza
 fastfetch
-firefox-developer-edition
 firewalld
 fzf
 git
@@ -91,6 +91,7 @@ wireplumber
 wl-clipboard
 wl-mirror
 wpa_supplicant
+xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
 xwayland-satellite
 zoxide
