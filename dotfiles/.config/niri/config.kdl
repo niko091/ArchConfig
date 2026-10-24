@@ -44,7 +44,7 @@ input {
         // dwtp
         // drag false
         // drag-lock
-        natural-scroll
+        // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
@@ -207,6 +207,11 @@ include "animations/pixelate.kdl"
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+// Open new tiled windows at the full available width.
+window-rule {
+    open-maximized true
+}
+
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 window-rule {
@@ -295,3 +300,8 @@ include "dms/outputs.kdl"
 include "dms/cursor.kdl"
 
 include "dms/windowrules.kdl"
+
+// Keep personal shortcuts after DMS includes so they take precedence.
+binds {
+    Mod+S hotkey-overlay-title="Half-width window" { set-column-width "50%"; }
+}

@@ -20,6 +20,10 @@ yay -S --needed - <pkglist_aur.txt
 stow --restow --target="$HOME" dotfiles
 
 sudo systemctl enable --now power-profiles-daemon.service thermald.service
+if systemctl list-unit-files greetd.service --no-legend | grep -q '^greetd.service'; then
+    sudo systemctl disable greetd.service
+fi
+sudo systemctl enable getty@tty1.service
 systemctl --user daemon-reload
 systemctl --user enable --now dcal.service niri-auto-mirror.service
 
@@ -27,4 +31,4 @@ if [[ ${SHELL:-} != /usr/bin/zsh ]]; then
     chsh -s /usr/bin/zsh
 fi
 
-echo "Installazione completata. Esegui logout/login per avviare Niri."
+echo "Installazione completata. Al login su tty1 Niri si avvia automaticamente."

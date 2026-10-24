@@ -1,5 +1,4 @@
-# Start Niri automatically only from the primary local login console.
-# Passing -l tells niri-session that Zsh is already a login shell.
+# Start Niri after an interactive local login on tty1.
 if [[ -o interactive &&
       -z ${WAYLAND_DISPLAY:-} &&
       -z ${DISPLAY:-} &&

@@ -1,0 +1,15 @@
+skip_selection = false
+
+[GTK]
+application_prefer_dark_theme = true
+cursor_theme_name = "Adwaita"
+font_name = "Sans 14"
+icon_theme_name = "Adwaita"
+theme_name = "Adwaita"
+
+[appearance]
+greeting_msg = "Benvenuto"
+
+[widget.clock]
+format = "%d/%m/%Y  %H:%M"
+resolution = "1s"

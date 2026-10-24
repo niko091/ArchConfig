@@ -20,6 +20,7 @@ dgop
 direnv
 discord
 dms-shell
+dms-shell-niri
 dos2unix
 efibootmgr
 eza
@@ -31,9 +32,6 @@ git
 git-delta
 grub
 gst-plugin-pipewire
-hyprland
-hyprlock
-hyprpaper
 hyprpolkitagent
 intel-media-driver
 intel-ucode
@@ -94,7 +92,6 @@ wl-clipboard
 wl-mirror
 wpa_supplicant
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xwayland-satellite
 zoxide
 zram-generator
