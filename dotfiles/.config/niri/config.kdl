@@ -16,6 +16,9 @@ gestures {
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 input {
+    // Selecting the current workspace by number returns to the previous one.
+    workspace-auto-back-and-forth
+
     keyboard {
         xkb {
             // You can set rules, model, layout, variant and options.

@@ -27,6 +27,8 @@ sudo systemctl enable getty@tty1.service
 systemctl --user daemon-reload
 systemctl --user enable --now dcal.service niri-auto-mirror.service
 
+bash "$repo_dir/setup-gestures.sh"
+
 if [[ ${SHELL:-} != /usr/bin/zsh ]]; then
     chsh -s /usr/bin/zsh
 fi
